@@ -46,8 +46,14 @@ EOF
   sudo apt-get autoclean
   sudo apt-get clean
 ```
-you can find more information in https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#ubuntu and 
+you can find more information in 
+
+https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#ubuntu 
+
+and 
+
 https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#ubuntu
+
 2. Compile ffmpeg
 ```shell
 chmod a+x compile.sh
