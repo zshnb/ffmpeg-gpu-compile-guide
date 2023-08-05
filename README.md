@@ -27,13 +27,11 @@ The compiled ffmpeg has mostly common filter and other useful filter, support
   dpkg -i cuda-keyring_1.0-1_all.deb
   rm cuda-keyring_1.0-1_all.deb
 
-    # pin cuda
   cat >/etc/apt/preferences.d/cuda-11.6-pin-1000.pref <<EOF
 Package: cuda
 Pin: version 11.6.*
 Pin-Priority: 1000
 EOF
-    # install cudnn
   cat >/etc/apt/preferences.d/libcudnn8-8.2.4-pin-1000.pref <<EOF
 Package: libcudnn8
 Pin: version 8.2.4.*
