@@ -6,7 +6,7 @@
   --enable-filter=scale --enable-gnutls --enable-gpl --enable-libass --enable-libfdk-aac --enable-libfreetype \
   --enable-libmp3lame --enable-libopus --enable-libtheora --enable-libvorbis --enable-libvpx --enable-libx264 --enable-nonfree \
   --enable-nvdec --enable-nvenc --enable-pic --enable-protocol=file --enable-protocol=https \
-  --enable-vaapi --enable-libplacebo --enable-vulkan \
+  --enable-vaapi --enable-libplacebo --enable-vulkan --enable-libshaderc \
   --enable-ladspa --enable-libaom --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 \
   --enable-libflite --enable-libfontconfig --enable-libfribidi --enable-libzimg \
   --enable-libgme --enable-libgsm --enable-libjack --enable-libmysofa \
