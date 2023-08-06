@@ -8,37 +8,37 @@ git clone https://git.ffmpeg.org/ffmpeg.git ffmpeg/
 sudo apt-get install build-essential yasm cmake libtool libc6 libc6-dev unzip wget libnuma1 libnuma-dev
 echo 'installed basic dependencies'
 
-apt-get install frei0r-plugins-dev
-apt-get install ladspa-sdk-dev
-apt-get install libgsm1-dev
-apt-get install libmysofa-dev
-apt-get install flite1-dev
-apt-get install libcodec2-dev
-apt-get install libavcodec-dev libavformat-dev libavutil-dev
-apt-get install libopenjp2-7-dev
-apt-get install libopenmpt-dev
-apt-get install librsvg2-dev
-apt-get install librubberband-dev
-apt-get install libshine-dev
-apt-get install libsnappy-dev
-apt-get install libsoxr-dev
-apt-get install libssh-dev
-apt-get install libspeex-dev
-apt-get install libtwolame-dev
-apt-get install libvidstab-dev
-apt-get install libvpx-dev
-apt-get install libwebp-dev
-apt-get install libx265-dev
-apt-get install libxvidcore-dev
-apt-get install libzmq5-dev
-apt-get install libzvbi-dev
-apt-get install libopenal-dev
-apt-get install libomxil-bellagio-dev
-apt-get install libjack-dev
-apt-get install libcdio-dev
-apt-get install libcdparanoia-dev
-apt-get install libcdio-dev libcdio-paranoia-dev
-apt-get install libsdl2-dev
+apt-get install -y frei0r-plugins-dev
+apt-get install -y ladspa-sdk-dev
+apt-get install -y libgsm1-dev
+apt-get install -y libmysofa-dev
+apt-get install -y flite1-dev
+apt-get install -y libcodec2-dev
+apt-get install -y libavcodec-dev libavformat-dev libavutil-dev
+apt-get install -y libopenjp2-7-dev
+apt-get install -y libopenmpt-dev
+apt-get install -y librsvg2-dev
+apt-get install -y librubberband-dev
+apt-get install -y libshine-dev
+apt-get install -y libsnappy-dev
+apt-get install -y libsoxr-dev
+apt-get install -y libssh-dev
+apt-get install -y libspeex-dev
+apt-get install -y libtwolame-dev
+apt-get install -y libvidstab-dev
+apt-get install -y libvpx-dev
+apt-get install -y libwebp-dev
+apt-get install -y libx265-dev
+apt-get install -y libxvidcore-dev
+apt-get install -y libzmq5-dev
+apt-get install -y libzvbi-dev
+apt-get install -y libopenal-dev
+apt-get install -y libomxil-bellagio-dev
+apt-get install -y libjack-dev
+apt-get install -y libcdio-dev
+apt-get install -y libcdparanoia-dev
+apt-get install -y libcdio-dev libcdio-paranoia-dev
+apt-get install -y libsdl2-dev
 echo 'installed extra dependencies'
 
 mkdir aom
