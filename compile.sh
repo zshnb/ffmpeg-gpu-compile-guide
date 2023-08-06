@@ -46,6 +46,7 @@ cd aom
 git clone https://aomedia.googlesource.com/aom
 cmake ./aom && make && sudo make install
 echo 'installed aom'
+cd ..
 
 git clone https://github.com/sekrit-twc/zimg.git --recursive
 cd zimg
@@ -57,7 +58,7 @@ ldconfig
 wget -qO - https://packages.lunarg.com/lunarg-signing-key-pub.asc | sudo apt-key add -
 sudo wget -qO /etc/apt/sources.list.d/lunarg-vulkan-1.3.250-focal.list https://packages.lunarg.com/vulkan/1.3.250/lunarg-vulkan-1.3.250-focal.list
 sudo apt update
-sudo apt install vulkan-sdk
+sudo apt install -y vulkan-sdk
 echo 'installed vulkan'
 
 sudo apt-get -y install python3-pip
