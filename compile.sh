@@ -79,14 +79,14 @@ DIR=./build
 meson $DIR -Dvulkan-registry=/usr/share/vulkan/registry/vk.xml
 ninja -C$DIR install
 echo 'installed libplacebo'
-cd ..
+cd ../..
 
 export PATH=$PATH:/usr/local/cuda/bin
 if [ ! -x conf.sh ]; then
   chmod a+x conf.sh
 fi
-cp conf.sh ffmpeg/
-cd ffmpeg
+cp conf.sh build-ffmpeg/ffmpeg/
+cd build-ffmpeg/ffmpeg
 ./conf.sh
 make -j 8
 make install
