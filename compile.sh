@@ -64,8 +64,6 @@ sh autogen.sh && ./configure && make install
 echo 'installed zimg'
 cd ..
 
-ldconfig
-
 wget -qO - https://packages.lunarg.com/lunarg-signing-key-pub.asc | apt-key add -
 wget -qO /etc/apt/sources.list.d/lunarg-vulkan-1.3.250-focal.list https://packages.lunarg.com/vulkan/1.3.250/lunarg-vulkan-1.3.250-focal.list
 apt update
@@ -74,7 +72,7 @@ echo 'installed vulkan'
 
 apt-get -y install python3-pip
 pip3 install meson ninja
-git clone --recursive https://code.videolan.org/videolan/libplacebo
+git clone --recursive https://code.videolan.org/videolan/libplacebo -b v5.229.2
 cd libplacebo
 DIR=./build
 meson $DIR -Dvulkan-registry=/usr/share/vulkan/registry/vk.xml
@@ -92,4 +90,5 @@ cd ffmpeg
 make -j 8
 make install
 echo 'installed ffmpeg'
+ldconfig
 ./ffmpeg
