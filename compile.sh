@@ -49,6 +49,7 @@ apt-get install -y libcdio-dev libcdio-paranoia-dev
 apt-get install -y libsdl2-dev
 apt-get install -y libtheora-dev
 apt-get install -y libgme-dev
+apt-get install -y librsvg2-dev
 echo 'installed extra dependencies'
 
 mkdir aom
@@ -65,7 +66,7 @@ echo 'installed zimg'
 cd ..
 
 wget -qO - https://packages.lunarg.com/lunarg-signing-key-pub.asc | apt-key add -
-wget -qO /etc/apt/sources.list.d/lunarg-vulkan-1.3.250-focal.list https://packages.lunarg.com/vulkan/1.3.250/lunarg-vulkan-1.3.250-focal.list
+wget -qO /etc/apt/sources.list.d/lunarg-vulkan-1.3.236-focal.list https://packages.lunarg.com/vulkan/1.3.236/lunarg-vulkan-1.3.236-focal.list
 apt update
 apt install -y vulkan-sdk
 echo 'installed vulkan'
