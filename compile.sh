@@ -8,6 +8,14 @@ git clone https://git.ffmpeg.org/ffmpeg.git ffmpeg/
 sudo apt-get install -y build-essential yasm cmake libtool libc6 libc6-dev unzip wget libnuma1 libnuma-dev libdrm-dev libass-dev libopus-dev libmp3lame-dev libva-dev libfdk-aac-dev
 echo 'installed basic dependencies'
 
+apt-get install -y libavcodec-dev libavformat-dev libavutil-dev
+apt-get install -y liblilv-0-0 liblilv-dev lilv-utils
+apt-get install -y libiec61883-dev libraw1394-tools libraw1394-doc libraw1394-dev libraw1394-doc libraw1394-tools
+apt-get install -y libavc1394-0 libavc1394-dev libavc1394-tools
+apt-get install -y libbluray-dev libbluray-doc libbluray-bin
+apt-get install -y libbs2b-dev libbs2b0
+apt-get install -y libcaca-dev
+apt-get install -y libdc1394-22-dev
 apt-get install -y frei0r-plugins-dev
 apt-get install -y ladspa-sdk-dev
 apt-get install -y libgsm1-dev
