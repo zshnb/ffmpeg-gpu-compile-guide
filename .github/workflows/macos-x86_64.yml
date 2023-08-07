@@ -28,6 +28,7 @@ jobs:
           echo ${CURRENT_USER}
 
       - name: production artifacts
+        if: 0
         uses: actions/upload-artifact@v3
         with:
           name: macos-ffmpeg
