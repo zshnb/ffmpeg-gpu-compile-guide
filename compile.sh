@@ -87,7 +87,7 @@ fi
 cp conf.sh build-ffmpeg/ffmpeg/
 cd build-ffmpeg/ffmpeg
 ./conf.sh
-make -j 8
+make -j $(nproc)
 make install
 echo 'installed ffmpeg'
 ldconfig
