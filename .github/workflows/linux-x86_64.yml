@@ -53,13 +53,13 @@ jobs:
         if: 1
         run: |
           ${{ inputs.debug_level }}
-          bash install-Nvidia-driver-and-CUDA.sh
+          sudo bash install-Nvidia-driver-and-CUDA.sh
 
       - name: build
         if: 1
         run: |
           ${{ inputs.debug_level }}
-          bash compile.sh
+          sudo bash compile.sh
 
       - name: Show Build Result
         if: 1
