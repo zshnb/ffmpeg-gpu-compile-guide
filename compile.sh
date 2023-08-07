@@ -49,6 +49,7 @@ apt-get install -y libcdio-dev libcdio-paranoia-dev
 apt-get install -y libsdl2-dev
 apt-get install -y libtheora-dev
 apt-get install -y libgme-dev
+apt install -y libunistring-dev
 echo 'installed extra dependencies'
 
 mkdir aom
