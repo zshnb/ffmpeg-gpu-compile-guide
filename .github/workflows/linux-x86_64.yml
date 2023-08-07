@@ -20,7 +20,8 @@ env:
 jobs:
   linux-x86_64:
     if: 1
-    runs-on: ubuntu-latest
+    # runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Prepare Source Code
