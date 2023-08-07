@@ -49,6 +49,7 @@ apt-get install -y libcdio-dev libcdio-paranoia-dev
 apt-get install -y libsdl2-dev
 apt-get install -y libtheora-dev
 apt-get install -y libgme-dev
+apt install -y libunistring-dev
 echo 'installed extra dependencies'
 
 mkdir aom
@@ -87,7 +88,7 @@ fi
 cp conf.sh build-ffmpeg/ffmpeg/
 cd build-ffmpeg/ffmpeg
 ./conf.sh
-make -j 8
+make -j $(nproc)
 make install
 echo 'installed ffmpeg'
 ldconfig
