@@ -8,47 +8,19 @@ git clone https://git.ffmpeg.org/ffmpeg.git ffmpeg/
 apt-get install -y build-essential yasm cmake libtool libc6 libc6-dev unzip wget libnuma1 libnuma-dev libdrm-dev libass-dev libopus-dev libmp3lame-dev libva-dev libfdk-aac-dev
 echo 'installed basic dependencies'
 
-apt-get install -y libavcodec-dev libavformat-dev libavutil-dev
-apt-get install -y liblilv-0-0 liblilv-dev lilv-utils
-apt-get install -y libiec61883-dev libraw1394-tools libraw1394-doc libraw1394-dev libraw1394-doc libraw1394-tools
-apt-get install -y libavc1394-0 libavc1394-dev libavc1394-tools
-apt-get install -y libbluray-dev libbluray-doc libbluray-bin
-apt-get install -y libbs2b-dev libbs2b0
-apt-get install -y libcaca-dev
-apt-get install -y libdc1394-22-dev
-apt-get install -y frei0r-plugins-dev
-apt-get install -y ladspa-sdk-dev
-apt-get install -y libgsm1-dev
-apt-get install -y libmysofa-dev
-apt-get install -y flite1-dev
-apt-get install -y libcodec2-dev
-apt-get install -y libopenjp2-7-dev
-apt-get install -y libopenmpt-dev
-apt-get install -y librsvg2-dev
-apt-get install -y librubberband-dev
-apt-get install -y libshine-dev
-apt-get install -y libsnappy-dev
-apt-get install -y libsoxr-dev
-apt-get install -y libssh-dev
-apt-get install -y libspeex-dev
-apt-get install -y libtwolame-dev
-apt-get install -y libvidstab-dev
-apt-get install -y libvpx-dev
-apt-get install -y libwebp-dev
-apt-get install -y libx264-dev
-apt-get install -y libx265-dev
-apt-get install -y libxvidcore-dev
-apt-get install -y libzmq5-dev
-apt-get install -y libzvbi-dev
-apt-get install -y libopenal-dev
-apt-get install -y libomxil-bellagio-dev
-apt-get install -y libjack-dev
-apt-get install -y libcdio-dev
-apt-get install -y libcdparanoia-dev
-apt-get install -y libcdio-dev libcdio-paranoia-dev
-apt-get install -y libsdl2-dev
-apt-get install -y libtheora-dev
-apt-get install -y libgme-dev
+apt-get install -y libavcodec-dev libavformat-dev libavutil-dev \
+  liblilv-0-0 liblilv-dev lilv-utils \
+  libiec61883-dev libraw1394-tools libraw1394-doc libraw1394-dev libraw1394-doc libraw1394-tools \
+  libavc1394-0 libavc1394-dev libavc1394-tools \
+  libbluray-dev libbluray-doc libbluray-bin \
+  libbs2b-dev libbs2b0 libcaca-dev libdc1394-22-dev \
+  frei0r-plugins-dev ladspa-sdk-dev libgsm1-dev libmysofa-dev \
+  flite1-dev libcodec2-dev libopenjp2-7-dev libopenmpt-dev librsvg2-dev \
+  librubberband-dev libshine-dev libsnappy-dev libsoxr-dev libssh-dev \
+  libspeex-dev libtwolame-dev libvidstab-dev libvpx-dev libwebp-dev \
+  libx264-dev libx265-dev libxvidcore-dev libzmq5-dev libzvbi-dev \
+  libopenal-dev libomxil-bellagio-dev libjack-dev libcdio-dev libcdparanoia-dev \
+  libcdio-dev libcdio-paranoia-dev libsdl2-dev libtheora-dev libgme-dev
 echo 'installed extra dependencies'
 
 mkdir aom
@@ -72,7 +44,7 @@ echo 'installed vulkan'
 
 apt-get -y install python3-pip
 pip3 install meson ninja
-git clone --recursive https://code.videolan.org/videolan/libplacebo -b v5.229.2
+git clone --recursive https://code.videolan.org/videolan/libplacebo -b v6.292.1
 cd libplacebo
 DIR=./build
 meson $DIR -Dvulkan-registry=/usr/share/vulkan/registry/vk.xml
