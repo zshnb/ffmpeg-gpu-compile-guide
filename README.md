@@ -75,7 +75,7 @@ ffmpeg version N-111683-g7aa9684db3 Copyright (c) 2000-2023 the FFmpeg developer
   libswresample   4. 11.100 /  4. 11.100
   libpostproc    57.  2.100 / 57.  2.100
 ```
-# support feature with its library
+# Support feature with its library
 | feature                                 | library               | description                                      |
 |-----------------------------------------|-----------------------|--------------------------------------------------|
 | --enable-libplacebo                     | libplacebo            | GPU-accelerated video/image rendering primitives |
@@ -86,7 +86,7 @@ ffmpeg version N-111683-g7aa9684db3 Copyright (c) 2000-2023 the FFmpeg developer
 | --enable-libx264                        | libx264-dev           | h264 encoder & decoder                           |
 | --enable-libx265                        | libx265-dev           | h265/hevc encoder & decoder                      |
 
-# tips for use libplacebo with CUDA
+# Tips for use libplacebo with CUDA
 After discuss with libplacebo author, there has some incompatible with ffmpeg master, CUDA.
 So if you want to use libplacebo with CUDA, you need to compile libplacebo with version v6.292.1,
 and add disable_multiplane=1 in the ffmpeg command. The example command is
