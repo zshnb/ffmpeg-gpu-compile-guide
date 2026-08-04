@@ -1,3 +1,5 @@
+[Español](README.es-ES.md)
+
 This guide is to help you compile the latest ffmpeg with Nvidia CUDA and so much external library like libzimg, libplacebo 
 in your local computer.
 The compiled ffmpeg has mostly common filter and other useful filter, support
